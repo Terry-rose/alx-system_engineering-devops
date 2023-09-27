@@ -1,2 +1,2 @@
 #!/bin/bash
-directory_name="/tmp/my_first_directory" && mkdir -p "$directory_name" && echo "Directory '$directory_name' created successfully." || echo "Failed to create directory '$directory_name'."
+directory_name="/tmp/my_first_directory" ; mkdir -p "$directory_name" ; echo "Directory '$directory_name' created successfully." || echo "Failed to create directory '$directory_name'."
