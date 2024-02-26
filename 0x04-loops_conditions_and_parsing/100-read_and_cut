@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Open the /etc/passwd file for reading
+while IFS=: read -r username _ uid _ _ home _; do
+    # Display the required information
+    echo "$username:$uid:$home"
+done < /etc/passwd
+
