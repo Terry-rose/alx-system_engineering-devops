@@ -1,4 +1,7 @@
 #!/bin/bash
 
+# This script groups visitors by IP and HTTP status code, counts occurrences,
+# and displays the data in the specified format.
+
 awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr | awk '{print $1, $2, $3}'
 
