@@ -3,15 +3,15 @@
 # This script answers questions about TCP and UDP protocols.
 
 # The correct answer to the first question is:
-# 1. It is a protocol that is transferring data in a slow way but surely
+"1"
 # Explanation: TCP is a reliable and connection-oriented protocol that ensures data integrity and delivery.
 
 # The correct answer to the second question is:
-# 2. It is a protocol that is transferring data in a fast way and might lose data along the process
+"2"
 # Explanation: UDP is a faster and connectionless protocol, but it may not guarantee delivery and can result in data loss.
 
 # The correct answer to the third question is:
-# 1. Have you received boxes x, y, z?
+"1"
 # Explanation: TCP ensures the ordered and reliable delivery of data, so it may check if the recipient received specific data packets.
 
 # Please make sure to provide explanations in your script.

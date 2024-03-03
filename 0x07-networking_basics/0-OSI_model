@@ -3,10 +3,10 @@
 # This script answers questions about the OSI model.
 
 # The correct answer to the "What is the OSI model?" question is:
-# 2. The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology.
+"2"
 
 # The correct answer to the "How is the OSI model organized?" question is:
-# 2. From the lowest to the highest level.
+"2"
 # Explanation: The OSI model is organized from the lowest level (Layer 1) to the highest level (Layer 7).
 
 # Additional context and explanations are provided in the comments of the script.
