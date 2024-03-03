@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
+
 # This script answers questions about MAC and IP addresses.
-# The correct answer to the first question is:
+
+# The correct answer to the "What is a MAC address?" question is:
 # 2. The unique identifier of a network interface
-# The correct answer to the second question is:
+# Explanation: A MAC (Media Access Control) address is a unique identifier assigned to a network interface.
+
+# The correct answer to the "What is an IP address?" question is:
 # 1. Is to devices connected to a network what postal address is to houses
+# Explanation: An IP (Internet Protocol) address is similar to a postal address for devices connected to a network.
 

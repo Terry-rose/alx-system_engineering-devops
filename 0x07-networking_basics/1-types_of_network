@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
+
 # This script answers questions about types of networks.
-# The correct answer to the first question is:
+
+# The correct answer to the "What type of network a computer in local is connected to?" question is:
 # 3. LAN
-# The correct answer to the second question is:
+# Explanation: A computer in a local area network (LAN) is connected to a local network.
+
+# The correct answer to the "What type of network could connect the Holberton HQ office with the Holberton-Gandi space?" question is:
 # 2. WAN
-# The correct answer to the third question is:
+# Explanation: A wide area network (WAN) could connect different offices in separate locations.
+
+# The correct answer to the "What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?" question is:
 # 1. Internet
+# Explanation: When using mobile data, your smartphone is connected to the Internet.
 
