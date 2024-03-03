@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script answers questions about types of networks.
+# The correct answer to the first question is:
+# 3. LAN
+# The correct answer to the second question is:
+# 2. WAN
+# The correct answer to the third question is:
+# 1. Internet
+

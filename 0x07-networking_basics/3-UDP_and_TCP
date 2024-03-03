@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script answers questions about TCP and UDP protocols.
+# The correct answer to the first question is:
+# 1. It is a protocol that is transferring data in a slow way but surely
+# The correct answer to the second question is:
+# 2. It is a protocol that is transferring data in a fast way and might lose data along the process
+# The correct answer to the third question is:
+# 1. Have you received boxes x, y, z?
+

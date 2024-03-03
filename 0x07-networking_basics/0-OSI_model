@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
-# This script provides information about the OSI (Open Systems Interconnection) model.
-3
-From the lowest to the highest level
+# This script answers questions about the OSI model.
+# It provides information about the OSI model and how it is organized.
+# The correct answer to the first question is:
+# 2. The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology
+# The correct answer to the second question is:
+# 2. From the lowest to the highest level
+
