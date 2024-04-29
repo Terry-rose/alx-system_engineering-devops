@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Install Apache and enable necessary modules
+apt-get update
+apt-get install -y apache2
+a2enmod rewrite
+
+# Create a directory for the HTML files
+mkdir -p /var/www/html
+
+# Create an index.html file with the desired content
+echo "<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Holberton</title>
+</head>
+<body>
+    <h1>Hello Holberton</h1>
+</body>
+</html>" > /var/www/html/index.html
+
+# Start Apache service
+service apache2 start
+
+# Keep the container running
+tail -f /dev/null
+
