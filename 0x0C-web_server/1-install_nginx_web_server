@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Update package index and install nginx with -y flag to automatically answer yes to prompts
 apt-get update
