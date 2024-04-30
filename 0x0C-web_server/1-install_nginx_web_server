@@ -10,3 +10,10 @@ echo "Hello World!" > /usr/share/nginx/html/index.html
 # Restart nginx without using systemctl
 service nginx restart
 
+# Check if nginx restarted successfully
+if [ $? -eq 0 ]; then
+    echo "Nginx restarted successfully"
+else
+    echo "Failed to restart nginx"
+fi
+
