@@ -8,10 +8,11 @@ apt-get install -y nginx
 echo "Hello World!" > /usr/share/nginx/html/index.html
 
 # Restart nginx without using systemctl
-service nginx restart
+service nginx stop
+service nginx start
 
-# Check if nginx restarted successfully
-if [ $? -eq 0 ]; then
+# Check if nginx is running
+if pgrep nginx >/dev/null; then
     echo "Nginx restarted successfully"
 else
     echo "Failed to restart nginx"

@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Install Nginx if not already installed
+apt-get update
+apt-get install -y nginx
+
+# Create a temporary configuration file for redirection
+cat > /etc/nginx/sites-available/temp_redirect <<EOF
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    server_name _;
+
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+
+    # Other server configurations can be added here if needed
+
+}
+EOF
+
+# Enable the temporary configuration by creating a symbolic link
+ln -s /etc/nginx/sites-available/temp_redirect /etc/nginx/sites-enabled/
+
+# Test Nginx configuration
+nginx -t
+
+# Restart Nginx to apply the changes
+service nginx restart
+
