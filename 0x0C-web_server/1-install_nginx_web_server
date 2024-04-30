@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Script to install and configure Nginx web server
+
 # Update package index and install nginx with -y flag to automatically answer yes to prompts
 apt-get update
 apt-get install -y nginx
