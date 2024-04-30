@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Update package index and install nginx with -y flag to automatically answer yes to prompts
+apt-get update
+apt-get install -y nginx
+
+# Replace default nginx index.html with custom content
+echo "Hello World!" > /usr/share/nginx/html/index.html
+
+# Restart nginx without using systemctl
+service nginx restart
+
