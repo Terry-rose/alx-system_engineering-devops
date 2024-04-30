@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# This script installs and configures HAProxy on the lb-01 server.
+# It distributes traffic to web-01 and web-02 using a roundrobin algorithm.
+# The servers are configured with the hostnames [STUDENT_ID]-web-01 and [STUDENT_ID]-web-02.
+# If not configured, please follow the tutorial to set up the hostnames.
 
 # Install HAProxy
 sudo apt-get update

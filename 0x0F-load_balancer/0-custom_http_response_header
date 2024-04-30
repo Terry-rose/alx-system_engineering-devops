@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# This script configures a brand new Ubuntu machine to have a custom Nginx response header.
+# It installs Nginx if not already installed and adds a custom header to its configuration.
+# The custom header includes the hostname of the server.
+# Ignore SC2154 for shellcheck
 
 # Install Nginx if not already installed
 sudo apt-get update
