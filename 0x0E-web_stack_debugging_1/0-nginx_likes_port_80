@@ -6,7 +6,7 @@
 
 # Function to check if Nginx is running
 nginx_is_running() {
-    ps -ef | grep -v grep | grep nginx &> /dev/null
+	pgrep nginx &> /dev/null
 }
 
 # Function to restart Nginx
