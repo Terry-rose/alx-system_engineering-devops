@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # This script stops and starts the nginx service and checks if it's running on port 80.
-service nginx stop
 curl 0:80 >/dev/null 2>&1
 service nginx start
 
