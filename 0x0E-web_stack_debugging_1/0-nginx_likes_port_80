@@ -1,38 +1,11 @@
 #!/usr/bin/env bash
-# Bash script to configure Nginx to listen on port 80
-# This script checks if Nginx is installed and running, then configures it to listen on port 80
-# if it's not already configured.
-# It also restarts Nginx if necessary to apply the configuration changes.
 
-# Function to check if Nginx is running
-nginx_is_running() {
-	pgrep nginx &> /dev/null
-}
+# This script updates the Nginx configuration to listen on port 80
+# and restarts Nginx to apply the changes.
 
-# Function to restart Nginx
-nginx_restart() {
-    service nginx restart
-}
+# Update Nginx configuration to listen on port 80
+sed -i 's/listen 80;/listen 80 default_server;/g' /etc/nginx/sites-available/default
 
-# Check if Nginx is installed
-if ! dpkg -l | grep -q nginx; then
-    echo "Nginx is not installed. Installing..."
-    apt-get update
-    apt-get install -y nginx
-fi
-
-# Check if Nginx is running
-if ! nginx_is_running; then
-    echo "Nginx is not running. Starting..."
-    service nginx start
-fi
-
-# Check Nginx configuration and modify if necessary
-if ! grep -q "listen 80" /etc/nginx/sites-enabled/default; then
-    echo "Configuring Nginx to listen on port 80..."
-    sed -i 's/listen 80 default_server;/listen 80;/g' /etc/nginx/sites-enabled/default
-    nginx_restart
-fi
-
-echo "Nginx is now listening on port 80."
+# Restart Nginx to apply changes
+service nginx restart
 
